@@ -1,0 +1,74 @@
+\begin{table}
+    \centering
+    \caption{Metrics for the CASP15 dataset (n = 71 targets).}
+    \resizebox{!}{0.4\textheight}{
+        \begin{tabular}{@{}lccccccccccccccc@{}}
+            \toprule
+            & \multicolumn{3}{c}{\textbf{RMSD (\AA)}} & \multicolumn{4}{c}{\textbf{$\chi$-MAE ($^\circ$)}} & \textbf{$\chi$-Acc. (\%)} & \multicolumn{3}{c}{\textbf{Steric Clashes (\#)}} \\ 
+            \cmidrule(lr){2-4} \cmidrule(lr){5-8} \cmidrule(lr){9-9} \cmidrule(lr){10-12}
+            \textbf{Input Structure} & \textbf{All} & \textbf{Core} & \textbf{Surface} & $\chi_1$ & $\chi_2$ & $\chi_3$ & $\chi_4$ & $\chi_{1-4}$ & 100\% & 90\% & 80\% & \\ \midrule
+            \textbf{Sequence} & & & & & & & & & \\ 
+                \textnormal{\hspace{0.5cm}AlphaFold2} & 0.90 & 0.58 & 1.11 & 28.05 & 27.90 & 48.04 & 55.00 & 53.9 & 48.2 & 2.0 & 0.0 \\
+                \textnormal{\hspace{0.5cm}AlphaFold3} & 0.95 & 0.60 & 1.16 & 30.18 & 28.90 & 48.92 & 53.94 & 53.8 & 58.4 & 8.1 & 1.0 \\
+            \textbf{Native} & & & & & & & & & \\ 
+                \textnormal{\hspace{0.5cm}FlowPacker\textsubscript{BC40}} & 0.73 & 0.35 & 0.95 & 20.27 & 23.43 & 43.18 & 54.89 & 64.7 & 111.5 & 18.4 & 3.9 \\
+                \textnormal{\hspace{0.5cm}FlowPacker\textsubscript{BC40, conf}} & 0.72 & 0.35 & 0.94 & 20.25 & 23.52 & 42.58 & 55.02 & 64.8 & 111.3 & 19.3 & 5.0 \\
+                \textnormal{\hspace{0.5cm}FlowPacker\textsubscript{cluster}} & 0.69 & 0.33 & 0.90 & 18.73 & 22.21 & 41.87 & 53.05 & 66.2 & 99.9 & 14.9 & 3.3 \\
+                \textnormal{\hspace{0.5cm}FlowPacker\textsubscript{cluster, conf}} & 0.69 & 0.33 & 0.90 & 18.99 & 22.04 & 40.93 & 52.62 & 66.4 & 100.8 & 14.6 & 3.3 \\
+                \textnormal{\hspace{0.5cm}PIPPack} & 0.72 & 0.35 & 0.93 & 19.05 & 22.70 & 41.13 & 51.95 & 65.7 & 128.5 & 30.7 & 11.5 \\
+                \textnormal{\hspace{0.5cm}PIPPack\textsubscript{RS}} & 0.73 & 0.35 & 0.94 & 19.23 & 22.81 & 41.65 & 52.14 & 65.2 & 108.1 & 18.3 & 3.8 \\
+                \textnormal{\hspace{0.5cm}PIPPack\textsubscript{ensembled}} & 0.70 & 0.34 & 0.91 & 18.27 & 22.16 & 40.21 & 53.36 & 66.1 & 129.0 & 30.5 & 10.9 \\
+                \textnormal{\hspace{0.5cm}PIPPack\textsubscript{ensembled + RS}} & 0.71 & 0.34 & 0.92 & 18.69 & 22.37 & 41.74 & 55.14 & 65.5 & 108.2 & 17.4 & 3.0 \\
+                \textnormal{\hspace{0.5cm}DiffPack} & 0.76 & 0.41 & 0.96 & 21.55 & 24.63 & 45.29 & 61.13 & 62.7 & 117.3 & 30.7 & 11.7 \\
+                \textnormal{\hspace{0.5cm}DiffPack\textsubscript{conf}} & 0.68 & 0.34 & 0.87 & 18.29 & 22.47 & 42.91 & 56.88 & 65.7 & 95.3 & 20.3 & 7.2 \\
+                \textnormal{\hspace{0.5cm}AttnPacker} & 0.71 & 0.37 & 0.90 & 20.29 & 26.10 & 47.09 & 54.68 & 59.2 & 96.4 & 25.5 & 9.5 \\
+                \textnormal{\hspace{0.5cm}AttnPacker\textsubscript{PP}} & 0.75 & 0.39 & 0.95 & 20.77 & 24.96 & 46.80 & 54.99 & 59.0 & 117.2 & 4.0 & 1.2 \\
+                \textnormal{\hspace{0.5cm}DLPacker\textsubscript{seq}} & 0.78 & 0.40 & 0.98 & 22.31 & 26.48 & 51.26 & 68.17 & 59.0 & 96.4 & 17.7 & 4.6 \\
+                \textnormal{\hspace{0.5cm}DLPacker\textsubscript{natoms}} & 0.77 & 0.40 & 0.98 & 22.39 & 26.08 & 50.99 & 68.79 & 59.2 & 92.3 & 15.4 & 3.6 \\
+                \textnormal{\hspace{0.5cm}DLPacker\textsubscript{score}} & 0.76 & 0.38 & 0.97 & 21.88 & 26.29 & 50.86 & 67.53 & 59.5 & 89.4 & 14.0 & 3.2 \\
+                \textnormal{\hspace{0.5cm}FASPR} & 0.92 & 0.52 & 1.14 & 27.12 & 29.07 & 50.39 & 59.05 & 55.8 & 160.5 & 37.4 & 9.7 \\
+                \textnormal{\hspace{0.5cm}PyRosetta} & 0.87 & 0.43 & 1.12 & 25.84 & 27.57 & 47.95 & 55.32 & 58.0 & 98.5 & 13.5 & 3.1 \\
+                \textnormal{\hspace{0.5cm}SCWRL4} & 0.94 & 0.50 & 1.17 & 27.89 & 29.12 & 49.81 & 57.25 & 55.5 & 168.3 & 36.3 & 7.7 \\
+            \textbf{AF2-Generated} & & & & & & & & & \\ 
+                \textnormal{\hspace{0.5cm}FlowPacker\textsubscript{BC40}} & 0.95 & 0.59 & 1.16 & 30.10 & 29.87 & 50.56 & 60.66 & 53.5 & 104.2 & 15.7 & 3.0 \\
+                \textnormal{\hspace{0.5cm}FlowPacker\textsubscript{BC40, conf}} & 0.95 & 0.60 & 1.17 & 29.84 & 29.66 & 50.64 & 61.77 & 53.7 & 104.2 & 15.5 & 3.0 \\
+                \textnormal{\hspace{0.5cm}FlowPacker\textsubscript{cluster}} & 0.94 & 0.59 & 1.16 & 29.80 & 29.33 & 49.20 & 56.43 & 54.9 & 102.3 & 14.4 & 2.8 \\
+                \textnormal{\hspace{0.5cm}FlowPacker\textsubscript{cluster, conf}} & 0.94 & 0.59 & 1.15 & 29.38 & 29.18 & 50.18 & 57.00 & 55.1 & 100.4 & 13.9 & 2.3 \\
+                \textnormal{\hspace{0.5cm}PIPPack} & 0.97 & 0.60 & 1.20 & 30.55 & 30.00 & 51.48 & 57.15 & 53.4 & 123.9 & 25.6 & 8.2 \\
+                \textnormal{\hspace{0.5cm}PIPPack\textsubscript{RS}} & 0.98 & 0.62 & 1.20 & 30.66 & 30.53 & 52.80 & 57.51 & 53.1 & 109.3 & 17.2 & 3.5 \\
+                \textnormal{\hspace{0.5cm}PIPPack\textsubscript{ensembled}} & 0.96 & 0.61 & 1.19 & 30.08 & 29.89 & 50.22 & 56.32 & 53.5 & 124.5 & 27.3 & 9.4 \\
+                \textnormal{\hspace{0.5cm}PIPPack\textsubscript{ensembled + RS}} & 0.97 & 0.62 & 1.19 & 30.31 & 30.25 & 51.20 & 58.68 & 52.8 & 107.7 & 16.8 & 3.1 \\
+                \textnormal{\hspace{0.5cm}DiffPack} & 1.04 & 0.65 & 1.28 & 32.75 & 31.82 & 53.60 & 58.29 & 51.0 & 91.6 & 24.4 & 9.5 \\
+                \textnormal{\hspace{0.5cm}DiffPack\textsubscript{conf}} & 0.99 & 0.63 & 1.21 & 31.07 & 30.10 & 51.90 & 56.39 & 52.8 & 69.7 & 13.7 & 4.5 \\
+                \textnormal{\hspace{0.5cm}AttnPacker} & 0.92 & 0.61 & 1.12 & 30.34 & 31.48 & 52.10 & 55.52 & 50.4 & 87.9 & 23.6 & 7.7 \\
+                \textnormal{\hspace{0.5cm}AttnPacker\textsubscript{PP}} & 0.96 & 0.64 & 1.17 & 30.62 & 30.04 & 51.97 & 56.22 & 50.4 & 112.2 & 3.2 & 0.8 \\
+                \textnormal{\hspace{0.5cm}DLPacker\textsubscript{seq}} & 0.99 & 0.63 & 1.20 & 31.55 & 32.20 & 56.79 & 71.11 & 50.4 & 89.3 & 15.3 & 3.5 \\
+                \textnormal{\hspace{0.5cm}DLPacker\textsubscript{natoms}} & 0.97 & 0.64 & 1.18 & 31.08 & 31.48 & 56.02 & 71.83 & 50.6 & 85.5 & 13.7 & 2.8 \\
+                \textnormal{\hspace{0.5cm}DLPacker\textsubscript{score}} & 0.97 & 0.62 & 1.18 & 30.94 & 31.05 & 55.90 & 69.34 & 51.3 & 84.2 & 12.9 & 2.7 \\
+                \textnormal{\hspace{0.5cm}FASPR} & 1.06 & 0.71 & 1.27 & 33.67 & 32.53 & 53.56 & 59.75 & 50.0 & 147.0 & 32.5 & 7.9 \\
+                \textnormal{\hspace{0.5cm}PyRosetta} & 1.04 & 0.67 & 1.26 & 32.78 & 32.67 & 51.42 & 58.65 & 51.0 & 91.6 & 10.7 & 2.4 \\
+                \textnormal{\hspace{0.5cm}SCWRL4} & 1.07 & 0.71 & 1.29 & 33.95 & 32.73 & 53.35 & 61.55 & 50.0 & 160.7 & 35.0 & 7.5 \\
+            \textbf{AF3-Generated} & & & & & & & & & \\ 
+                \textnormal{\hspace{0.5cm}FlowPacker\textsubscript{BC40}} & 1.00 & 0.62 & 1.22 & 31.81 & 31.12 & 50.02 & 59.79 & 52.9 & 96.1 & 16.1 & 3.8 \\
+                \textnormal{\hspace{0.5cm}FlowPacker\textsubscript{BC40, conf}} & 0.99 & 0.64 & 1.21 & 31.48 & 30.79 & 50.54 & 59.04 & 53.0 & 97.2 & 15.5 & 3.7 \\
+                \textnormal{\hspace{0.5cm}FlowPacker\textsubscript{cluster}} & 0.98 & 0.61 & 1.20 & 31.55 & 30.27 & 49.23 & 56.57 & 54.0 & 91.5 & 13.5 & 2.4 \\
+                \textnormal{\hspace{0.5cm}FlowPacker\textsubscript{cluster, conf}} & 0.98 & 0.62 & 1.19 & 31.12 & 30.44 & 50.88 & 57.02 & 53.7 & 92.5 & 13.3 & 2.5 \\
+                \textnormal{\hspace{0.5cm}PIPPack} & 1.01 & 0.65 & 1.23 & 31.84 & 31.24 & 50.23 & 58.05 & 52.8 & 115.1 & 24.9 & 8.4 \\
+                \textnormal{\hspace{0.5cm}PIPPack\textsubscript{RS}} & 1.02 & 0.64 & 1.24 & 31.95 & 31.38 & 51.13 & 58.23 & 52.6 & 98.9 & 16.0 & 3.0 \\
+                \textnormal{\hspace{0.5cm}PIPPack\textsubscript{ensembled}} & 1.00 & 0.64 & 1.22 & 31.57 & 30.65 & 49.81 & 57.75 & 52.7 & 115.7 & 26.5 & 9.0 \\
+                \textnormal{\hspace{0.5cm}PIPPack\textsubscript{ensembled + RS}} & 1.00 & 0.65 & 1.22 & 31.65 & 30.78 & 51.20 & 58.12 & 52.1 & 98.2 & 14.9 & 2.7 \\
+                \textnormal{\hspace{0.5cm}DiffPack} & 1.07 & 0.70 & 1.30 & 33.76 & 33.22 & 54.93 & 62.44 & 50.1 & 85.7 & 22.0 & 7.9 \\
+                \textnormal{\hspace{0.5cm}DiffPack\textsubscript{conf}} & 1.02 & 0.66 & 1.23 & 32.44 & 31.03 & 52.27 & 61.20 & 51.6 & 70.8 & 14.5 & 4.6 \\
+                \textnormal{\hspace{0.5cm}AttnPacker} & 0.96 & 0.64 & 1.15 & 31.52 & 32.98 & 53.16 & 55.48 & 50.1 & 83.4 & 22.5 & 7.2 \\
+                \textnormal{\hspace{0.5cm}AttnPacker\textsubscript{PP}} & 1.00 & 0.66 & 1.20 & 31.90 & 31.34 & 53.14 & 55.79 & 50.3 & 104.0 & 2.5 & 0.7 \\
+                \textnormal{\hspace{0.5cm}DLPacker\textsubscript{seq}} & 1.02 & 0.67 & 1.23 & 32.65 & 33.52 & 56.95 & 72.58 & 49.4 & 81.8 & 15.0 & 3.9 \\
+                \textnormal{\hspace{0.5cm}DLPacker\textsubscript{natoms}} & 1.03 & 0.68 & 1.23 & 33.12 & 33.04 & 56.17 & 71.49 & 49.6 & 79.3 & 12.5 & 2.5 \\
+                \textnormal{\hspace{0.5cm}DLPacker\textsubscript{score}} & 1.01 & 0.65 & 1.22 & 32.59 & 32.39 & 55.95 & 72.09 & 50.1 & 77.3 & 12.9 & 3.0 \\
+                \textnormal{\hspace{0.5cm}FASPR} & 1.08 & 0.72 & 1.29 & 34.11 & 32.03 & 53.99 & 60.17 & 49.7 & 133.2 & 28.6 & 6.6 \\
+                \textnormal{\hspace{0.5cm}PyRosetta} & 1.06 & 0.70 & 1.28 & 33.66 & 32.78 & 52.45 & 58.19 & 50.5 & 81.7 & 8.3 & 1.7 \\
+                \textnormal{\hspace{0.5cm}SCWRL4} & 1.10 & 0.73 & 1.31 & 34.70 & 32.80 & 52.67 & 60.59 & 49.4 & 147.9 & 31.7 & 7.3 \\
+            \bottomrule
+        \end{tabular}
+    }
+    \label{tab:casp15_data_table}
+\end{table}

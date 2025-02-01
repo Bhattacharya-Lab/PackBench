@@ -1,0 +1,29 @@
+\begin{table*}[t]
+    \caption{Results from merging the tools together to minimize the REF2015 energy score on non-native backbones that were predicted from CASP15 target sequences ($n = 71$).\label{packbench_table}}
+    \tabcolsep=0pt%%
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lccccccccccc@{\extracolsep{\fill}}}
+        \toprule & \multicolumn{3}{@{}c@{}}{RMSD (\AA) $\downarrow$} & \multicolumn{4}{@{}c@{}}{$\chi$-MAE ($^\circ$) $\downarrow$} & \multicolumn{1}{@{}c@{}}{Recov. Rate (\%) $\uparrow$} & \multicolumn{3}{@{}c@{}}{Steric Clashes (\#) $\downarrow$} \\
+        \cline{2-4}\cline{5-8}\cline{9-9}\cline{10-12}
+         & All & Core & Surface 
+                & $\chi_1$ & $\chi_2$ & $\chi_3$ & $\chi_4$ 
+                & $\chi_{1-4}$ 
+                & $100\%$ & $90\%$  & $80\%$ \\
+        \midrule
+        \textbf{AF2-Generated Backbones} \\
+            \text{\hspace{0.5cm}AlphaFold2's Side-Chains} & 0.902 & 0.576 & 1.107 & 28.051 & 27.905 & \textbf{48.044} & 55.000 & 53.94 & 48.17 & 1.96 & 0.00 \\
+            \text{\hspace{0.5cm}Weighted Comb. of Tools} & \textbf{0.897} & \textbf{0.573} & \textbf{1.100} & \textbf{27.786} & \textbf{27.567} & 48.433 & \textbf{54.669} & \textbf{55.43} & \textbf{44.62} & \textbf{1.49} & \textbf{0.00} \\
+            \text{\hspace{0.5cm}p-values} & \textbf{\textcolor{darkgreen}{4.0e-07}} & \textbf{\textcolor{darkgreen}{0.018}} & \textbf{\textcolor{darkgreen}{3.8e-05}} & \textbf{\textcolor{darkgreen}{3.2e-07}} & \textbf{\textcolor{darkgreen}{3.2e-04}} & 0.975 & \textbf{\textcolor{darkgreen}{0.030}} & \textbf{\textcolor{darkgreen}{2.0e-08}} & \textbf{\textcolor{darkgreen}{2.1e-06}} & \textbf{\textcolor{darkgreen}{4.7e-04}} & - \\
+        \midrule
+        \textbf{AF3-Generated Backbones} \\
+            \text{\hspace{0.5cm}AlphaFold3's Side-Chains} & \textbf{0.951} & \textbf{0.600} & 1.159 & 30.182 & \textbf{28.902} & \textbf{48.920} & \textbf{53.937} & 53.83 & 58.39 & 8.07 & 1.01 \\
+            \text{\hspace{0.5cm}Weighted Comb. of Tools} & 0.952 & 0.605 & \textbf{1.158} & \textbf{30.106} & 28.957 & 49.421 & 54.637 & \textbf{54.11} & \textbf{50.31} & \textbf{4.48} & \textbf{0.31} \\
+            \text{\hspace{0.5cm}p-values} & 0.584 & 0.922 & 0.332 & \textbf{\textcolor{darkgreen}{0.002}} & 0.459 & 0.957 & 0.998 & \textbf{\textcolor{darkgreen}{0.044}} & \textbf{\textcolor{darkgreen}{5.3e-11}} & \textbf{\textcolor{darkgreen}{2.6e-10}} & \textbf{\textcolor{darkgreen}{0.008}} \\
+        \botrule
+    \end{tabular*}
+    \begin{tablenotes}%
+        \item P-values are indicated as green if the method demonstrated
+            statistically significantly better performance than AlphaFold
+            for that metric. Hyphens for p-values indicate that there was
+            no difference at all across all targets for that metric.
+    \end{tablenotes}
+\end{table*}

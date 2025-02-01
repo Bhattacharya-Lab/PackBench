@@ -1,0 +1,13 @@
+{
+    "all_rmsd": 0.9999822338457628,
+    "core_rmsd": 0.9306035660661405,
+    "surface_rmsd": 0.9999745151340411,
+    "all_mean_mae_1": 0.9999922096314937,
+    "all_mean_mae_2": 0.999988392710601,
+    "all_mean_mae_3": 0.9566640474522301,
+    "all_mean_mae_4": 0.8017853875628789,
+    "all_mae_sr": 0.019579649301596176,
+    "all_clash_info_100_num_clashes": 0.9999999999998436,
+    "all_clash_info_90_num_clashes": 0.9999999999994446,
+    "all_clash_info_80_num_clashes": 0.9999999993738686
+}
