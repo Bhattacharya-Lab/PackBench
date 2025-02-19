@@ -14,8 +14,8 @@ from pyrosetta.rosetta.core.scoring import fa_rep
 from pyrosetta.rosetta.core.pose import Pose
 
 # Defines constants
-DATA_ROOT_DIR = f"/home/common/proj/side_chain_packing/data/FINAL"
-OUTPUT_ROOT_DIR = f"./packbench_reproducibility"
+DATA_ROOT_DIR = "" # location of folder downloaded from Zenodo
+OUTPUT_ROOT_DIR = "./packbench_reproducibility_study" # location for structures this script outputs
 casps = ['casp14', 'casp15']
 bb_types = ['af2', 'af3']
 all_tools = [
@@ -188,10 +188,10 @@ def main():
             if casp == "casp14":
                 continue
 
-            nonnative_dir = os.path.join(DATA_ROOT_DIR, casp, f"{casp}_{af}_predictions")
+            nonnative_dir = os.path.join(DATA_ROOT_DIR, "structures", casp, f"{casp}_{af}_predictions")
             repacked_dirs = {}
             for tool in tools_subset:
-                repacked_dirs[tool] = os.path.join(DATA_ROOT_DIR, casp, f"repacking_{af}_bb", f"{tool}_predictions")
+                repacked_dirs[tool] = os.path.join(DATA_ROOT_DIR, "structures", casp, f"repacking_{af}_bb", f"{tool}_predictions")
 
             output_dir = os.path.join(OUTPUT_ROOT_DIR, f"{casp}_{af}")
             pack_dir(casp, af, nonnative_dir, repacked_dirs, output_dir, iter_count)

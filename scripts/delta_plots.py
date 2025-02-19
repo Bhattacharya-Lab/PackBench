@@ -3,9 +3,8 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 
-DATA_ROOT_DIR = f'/home/common/proj/side_chain_packing/data/FINAL'
+DATA_ROOT_DIR = '' # location of folder downloaded from Zenodo
 METRICS_ROOT_DIR = f'{DATA_ROOT_DIR}/metrics'
-ENERGY_FN_RESULTS_DIR = f'/home/common/proj/side_chain_packing/code/FlexiPacker/energy_fn_results'
 casps = ['casp14', 'casp15']
 bb_types = ['sequence', 'af2', 'af3']
 combination_name = "combination"

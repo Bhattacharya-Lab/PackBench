@@ -7,7 +7,7 @@ from tqdm import tqdm
 import glob
 
 # Calculates the metrics for a pair of (target, prediction).
-def results_per_target(targets_dir, predictions_dir):
+def results_per_target(targets_dir, predictions_dir, stats_dir=None, output_per_residue_metrics=False):
     target_stats_list = []
     target_files = glob.glob(os.path.join(targets_dir, "*.pdb"))
     target_files = set([os.path.basename(filename) for filename in target_files])
@@ -23,6 +23,16 @@ def results_per_target(targets_dir, predictions_dir):
         res_level_stats = assess_sidechains(target_pdb_path=target_pdb, decoy_pdb_path=predicted_pdb, steric_tol_fracs = [1,0.9,0.8])
         target_level_stats = summarize(res_level_stats)
         target_stats_list.append(target_level_stats)
+
+        if output_per_residue_metrics:
+            assert stats_dir is not None, "Pass in a desired directory for per-residue metrics"
+            converted = tensor_to_python(res_level_stats)
+            os.makedirs(stats_dir, exist_ok=True)
+            target_name = os.path.splitext(os.path.basename(target_pdb))[0]
+            stats_file_name = f"{target_name}.json"
+            stats_file_name = os.path.join(stats_dir, stats_file_name)
+            with open(stats_file_name, "w") as file:
+                json.dump(converted, file, indent=4)
 
     return target_stats_list
 
@@ -83,13 +93,13 @@ def tensor_to_python(obj):
     return obj
 
 if __name__ == "__main__":
-    targets_dir = f'' 
-    predictions_dir = f''
+    targets_dir = '' # location of folder with native structures
+    predictions_dir = '' # location of folder holding structures with packed side-chains
 
     per_target = results_per_target(targets_dir=targets_dir, predictions_dir=predictions_dir)
     across_all_targets = aggregate_dataset_stats(target_stats_list=per_target)
 
-    stats_dir = '.' 
+    stats_dir = './assessment_results' # location of folder in which outputted results will be placed
     stats_file_name = 'all_targets.json'
     converted = tensor_to_python(across_all_targets)
     os.makedirs(stats_dir, exist_ok=True)

@@ -4,7 +4,8 @@ import pandas as pd
 from matplotlib import pyplot as plt
 import seaborn as sns
 
-METRICS_ROOT_DIR = "/home/common/proj/side_chain_packing/data/FINAL/metrics"
+DATA_ROOT_DIR = "" # location of folder downloaded from Zenodo
+METRICS_ROOT_DIR = f"{DATA_ROOT_DIR}/metrics"
 
 def gather_data():
     casp = "casp15"

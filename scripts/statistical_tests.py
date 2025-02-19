@@ -2,7 +2,7 @@ import os
 from scipy.stats import wilcoxon
 import json
 
-DATA_ROOT_DIR = f'/home/common/proj/side_chain_packing/data/FINAL'
+DATA_ROOT_DIR = '' # location of folder downloaded from Zenodo
 METRICS_ROOT_DIR = f'{DATA_ROOT_DIR}/metrics'
 casps = ['casp14', 'casp15']
 bb_types = ['af2', 'af3']
