@@ -1,3 +1,813 @@
 # A side-chain *pack*ing *bench*marking study for non-native backbones
 
 by Sriniketh Vangaru, Debswapna Bhattacharya
+
+# Overview of data
+
+_**Note**: To see per-target results, simply click on the corresponding tool in the leftmost column._
+
+## Evaluation with the 14<sup>th</sup> CASP dataset
+
+<table style="width:85%;">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3"><strong>RMSD (Å)</strong></th>
+      <th colspan="4"><strong>&chi;-MAE (°)</strong></th>
+      <th><strong>&chi;-Acc. (%)</strong></th>
+      <th colspan="3"><strong>Steric Clashes (#)</strong></th>
+    </tr>
+    <tr>
+      <th><strong>Input Backbone</strong></th>
+      <th><strong>All</strong></th>
+      <th><strong>Core</strong></th>
+      <th><strong>Surface</strong></th>
+      <th>&chi;<sub>1</sub></th>
+      <th>&chi;<sub>2</sub></th>
+      <th>&chi;<sub>3</sub></th>
+      <th>&chi;<sub>4</sub></th>
+      <th>&chi;<sub>1-4</sub></th>
+      <th>100%</th>
+      <th>90%</th>
+      <th>80%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="12"><strong>Native</strong></td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/flowpacker_cluster_conf_predictions">FlowPacker</a></td>
+      <td>0.80</td>
+      <td>0.40</td>
+      <td>1.01</td>
+      <td>23.02</td>
+      <td>25.82</td>
+      <td>46.09</td>
+      <td>52.80</td>
+      <td>57.1</td>
+      <td>102.0</td>
+      <td>21.7</td>
+      <td>6.4</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/pippack_ensembled_predictions">PIPPack</a></td>
+      <td>0.79</td>
+      <td>0.43</td>
+      <td>0.99</td>
+      <td>21.57</td>
+      <td>25.25</td>
+      <td>41.93</td>
+      <td>51.27</td>
+      <td>58.1</td>
+      <td>131.2</td>
+      <td>36.2</td>
+      <td>14.4</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/diffpack_confidence_predictions">DiffPack</a></td>
+      <td>0.79</td>
+      <td>0.41</td>
+      <td>0.98</td>
+      <td>22.92</td>
+      <td>25.23</td>
+      <td>46.97</td>
+      <td>55.33</td>
+      <td>57.6</td>
+      <td>104.2</td>
+      <td>26.8</td>
+      <td>9.8</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/attnpacker_predictions">AttnPacker</a></td>
+      <td>0.79</td>
+      <td>0.44</td>
+      <td>0.98</td>
+      <td>24.19</td>
+      <td>28.79</td>
+      <td>48.34</td>
+      <td>50.37</td>
+      <td>51.3</td>
+      <td>84.6</td>
+      <td>22.8</td>
+      <td>8.1</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/dlpacker_score_predictions">DLPacker</a></td>
+      <td>0.90</td>
+      <td>0.50</td>
+      <td>1.11</td>
+      <td>27.45</td>
+      <td>30.03</td>
+      <td>52.82</td>
+      <td>70.34</td>
+      <td>50.6</td>
+      <td>83.2</td>
+      <td>16.8</td>
+      <td>5.1</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/faspr_predictions">FASPR</a></td>
+      <td>1.03</td>
+      <td>0.62</td>
+      <td>1.24</td>
+      <td>31.97</td>
+      <td>31.27</td>
+      <td>49.43</td>
+      <td>55.74</td>
+      <td>47.8</td>
+      <td>152.9</td>
+      <td>41.8</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/pyrosetta_packer_predictions">PyRosetta</a></td>
+      <td>1.00</td>
+      <td>0.55</td>
+      <td>1.23</td>
+      <td>30.98</td>
+      <td>31.29</td>
+      <td>49.31</td>
+      <td>55.58</td>
+      <td>48.9</td>
+      <td>104.3</td>
+      <td>22.1</td>
+      <td>8.4</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/scwrl4_predictions">SCWRL4</a></td>
+      <td>1.04</td>
+      <td>0.61</td>
+      <td>1.26</td>
+      <td>32.22</td>
+      <td>31.65</td>
+      <td>50.21</td>
+      <td>55.10</td>
+      <td>47.5</td>
+      <td>158.3</td>
+      <td>40.2</td>
+      <td>11.8</td>
+    </tr>
+    <tr>
+      <td colspan="12"><strong>AlphaFold2-Generated</strong></td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/casp14_af2_predictions">AlphaFold2</a></td>
+      <td>1.07</td>
+      <td>0.66</td>
+      <td>1.26</td>
+      <td>34.59</td>
+      <td>31.51</td>
+      <td>50.81</td>
+      <td>51.42</td>
+      <td>46.0</td>
+      <td>41.4</td>
+      <td>1.9</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/flowpacker_cluster_conf_predictions">FlowPacker</a></td>
+      <td>1.09</td>
+      <td>0.67</td>
+      <td>1.30</td>
+      <td>35.62</td>
+      <td>33.04</td>
+      <td>51.12</td>
+      <td>55.85</td>
+      <td>46.1</td>
+      <td>86.1</td>
+      <td>13.1</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/pippack_ensembled_predictions">PIPPack</a></td>
+      <td>1.10</td>
+      <td>0.68</td>
+      <td>1.30</td>
+      <td>35.71</td>
+      <td>33.06</td>
+      <td>51.07</td>
+      <td>54.55</td>
+      <td>45.1</td>
+      <td>102.3</td>
+      <td>20.6</td>
+      <td>6.5</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/diffpack_confidence_predictions">DiffPack</a></td>
+      <td>1.12</td>
+      <td>0.70</td>
+      <td>1.34</td>
+      <td>36.69</td>
+      <td>32.99</td>
+      <td>53.41</td>
+      <td>56.13</td>
+      <td>44.9</td>
+      <td>57.2</td>
+      <td>11.7</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/attnpacker_predictions">AttnPacker</a></td>
+      <td>1.06</td>
+      <td>0.68</td>
+      <td>1.25</td>
+      <td>36.08</td>
+      <td>34.92</td>
+      <td>52.85</td>
+      <td>51.78</td>
+      <td>43.3</td>
+      <td>68.5</td>
+      <td>15.3</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/dlpacker_score_predictions">DLPacker</a></td>
+      <td>1.11</td>
+      <td>0.70</td>
+      <td>1.33</td>
+      <td>36.28</td>
+      <td>35.19</td>
+      <td>57.87</td>
+      <td>72.25</td>
+      <td>42.9</td>
+      <td>67.7</td>
+      <td>11.0</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/faspr_predictions">FASPR</a></td>
+      <td>1.18</td>
+      <td>0.75</td>
+      <td>1.38</td>
+      <td>38.94</td>
+      <td>34.70</td>
+      <td>53.43</td>
+      <td>55.79</td>
+      <td>41.9</td>
+      <td>121.1</td>
+      <td>27.0</td>
+      <td>5.7</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/pyrosetta_packer_predictions">PyRosetta</a></td>
+      <td>1.16</td>
+      <td>0.72</td>
+      <td>1.38</td>
+      <td>38.16</td>
+      <td>35.19</td>
+      <td>52.84</td>
+      <td>55.31</td>
+      <td>42.7</td>
+      <td>73.9</td>
+      <td>7.7</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/scwrl4_predictions">SCWRL4</a></td>
+      <td>1.20</td>
+      <td>0.77</td>
+      <td>1.40</td>
+      <td>39.01</td>
+      <td>35.09</td>
+      <td>52.93</td>
+      <td>56.20</td>
+      <td>41.6</td>
+      <td>132.8</td>
+      <td>29.0</td>
+      <td>5.7</td>
+    </tr>
+    <tr>
+      <td colspan="12"><strong>AlphaFold3-Generated</strong></td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/casp14_af3_predictions">AlphaFold3</a></td>
+      <td>1.04</td>
+      <td>0.64</td>
+      <td>1.25</td>
+      <td>34.14</td>
+      <td>30.35</td>
+      <td>49.42</td>
+      <td>50.31</td>
+      <td>47.4</td>
+      <td>45.8</td>
+      <td>5.2</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/flowpacker_cluster_conf_predictions">FlowPacker</a></td>
+      <td>1.07</td>
+      <td>0.66</td>
+      <td>1.29</td>
+      <td>34.85</td>
+      <td>31.91</td>
+      <td>51.16</td>
+      <td>54.77</td>
+      <td>47.3</td>
+      <td>79.0</td>
+      <td>11.6</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/pippack_ensembled_predictions">PIPPack</a></td>
+      <td>1.08</td>
+      <td>0.67</td>
+      <td>1.29</td>
+      <td>35.18</td>
+      <td>32.38</td>
+      <td>50.02</td>
+      <td>52.42</td>
+      <td>46.6</td>
+      <td>95.1</td>
+      <td>19.5</td>
+      <td>6.3</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/diffpack_confidence_predictions">DiffPack</a></td>
+      <td>1.11</td>
+      <td>0.69</td>
+      <td>1.33</td>
+      <td>36.43</td>
+      <td>32.66</td>
+      <td>51.65</td>
+      <td>56.08</td>
+      <td>45.8</td>
+      <td>56.0</td>
+      <td>12.1</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/attnpacker_predictions">AttnPacker</a></td>
+      <td>1.04</td>
+      <td>0.66</td>
+      <td>1.24</td>
+      <td>35.26</td>
+      <td>34.11</td>
+      <td>51.57</td>
+      <td>51.90</td>
+      <td>43.9</td>
+      <td>62.4</td>
+      <td>14.3</td>
+      <td>4.3</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/dlpacker_score_predictions">DLPacker</a></td>
+      <td>1.10</td>
+      <td>0.69</td>
+      <td>1.31</td>
+      <td>36.28</td>
+      <td>34.13</td>
+      <td>56.91</td>
+      <td>72.26</td>
+      <td>43.3</td>
+      <td>64.5</td>
+      <td>10.3</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/faspr_predictions">FASPR</a></td>
+      <td>1.16</td>
+      <td>0.76</td>
+      <td>1.36</td>
+      <td>38.06</td>
+      <td>33.48</td>
+      <td>52.29</td>
+      <td>53.81</td>
+      <td>43.2</td>
+      <td>115.3</td>
+      <td>25.6</td>
+      <td>5.7</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/pyrosetta_packer_predictions">PyRosetta</a></td>
+      <td>1.15</td>
+      <td>0.71</td>
+      <td>1.37</td>
+      <td>37.66</td>
+      <td>34.51</td>
+      <td>52.23</td>
+      <td>54.16</td>
+      <td>43.4</td>
+      <td>69.3</td>
+      <td>7.1</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/scwrl4_predictions">SCWRL4</a></td>
+      <td>1.17</td>
+      <td>0.77</td>
+      <td>1.37</td>
+      <td>37.69</td>
+      <td>34.12</td>
+      <td>51.83</td>
+      <td>57.18</td>
+      <td>43.1</td>
+      <td>127.7</td>
+      <td>28.1</td>
+      <td>6.4</td>
+    </tr>
+  </tbody>
+</table>
+
+## Evaluation with the 15<sup>th</sup> CASP dataset
+
+<table style="width:85%;">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3"><strong>RMSD (Å)</strong></th>
+      <th colspan="4"><strong>&chi;-MAE (°)</strong></th>
+      <th><strong>&chi;-Acc. (%)</strong></th>
+      <th colspan="3"><strong>Steric Clashes (#)</strong></th>
+    </tr>
+    <tr>
+      <th><strong>Input Backbone</strong></th>
+      <th><strong>All</strong></th>
+      <th><strong>Core</strong></th>
+      <th><strong>Surface</strong></th>
+      <th>&chi;<sub>1</sub></th>
+      <th>&chi;<sub>2</sub></th>
+      <th>&chi;<sub>3</sub></th>
+      <th>&chi;<sub>4</sub></th>
+      <th>&chi;<sub>1-4</sub></th>
+      <th>100%</th>
+      <th>90%</th>
+      <th>80%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="12"><strong>Native</strong></td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/flowpacker_cluster_conf_predictions">FlowPacker</a></td>
+      <td>0.69</td>
+      <td>0.33</td>
+      <td>0.90</td>
+      <td>18.99</td>
+      <td>22.04</td>
+      <td>40.93</td>
+      <td>52.62</td>
+      <td>66.4</td>
+      <td>100.8</td>
+      <td>14.6</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/pippack_ensembled_predictions">PIPPack</a></td>
+      <td>0.70</td>
+      <td>0.34</td>
+      <td>0.91</td>
+      <td>18.27</td>
+      <td>22.16</td>
+      <td>40.21</td>
+      <td>53.36</td>
+      <td>66.1</td>
+      <td>129.0</td>
+      <td>30.5</td>
+      <td>10.9</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/diffpack_confidence_predictions">DiffPack</a></td>
+      <td>0.68</td>
+      <td>0.34</td>
+      <td>0.87</td>
+      <td>18.29</td>
+      <td>22.47</td>
+      <td>42.91</td>
+      <td>56.88</td>
+      <td>65.7</td>
+      <td>95.3</td>
+      <td>20.3</td>
+      <td>7.2</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/attnpacker_predictions">AttnPacker</a></td>
+      <td>0.71</td>
+      <td>0.37</td>
+      <td>0.90</td>
+      <td>20.29</td>
+      <td>26.10</td>
+      <td>47.09</td>
+      <td>54.68</td>
+      <td>59.2</td>
+      <td>96.4</td>
+      <td>25.5</td>
+      <td>9.5</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/dlpacker_score_predictions">DLPacker</a></td>
+      <td>0.76</td>
+      <td>0.38</td>
+      <td>0.97</td>
+      <td>21.88</td>
+      <td>26.29</td>
+      <td>50.86</td>
+      <td>67.53</td>
+      <td>59.5</td>
+      <td>89.4</td>
+      <td>14.0</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/faspr_predictions">FASPR</a></td>
+      <td>0.92</td>
+      <td>0.52</td>
+      <td>1.14</td>
+      <td>27.12</td>
+      <td>29.07</td>
+      <td>50.39</td>
+      <td>59.05</td>
+      <td>55.8</td>
+      <td>160.5</td>
+      <td>37.4</td>
+      <td>9.7</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/pyrosetta_packer_predictions">PyRosetta</a></td>
+      <td>0.87</td>
+      <td>0.43</td>
+      <td>1.12</td>
+      <td>25.84</td>
+      <td>27.57</td>
+      <td>47.95</td>
+      <td>55.32</td>
+      <td>58.0</td>
+      <td>98.5</td>
+      <td>13.5</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/scwrl4_predictions">SCWRL4</a></td>
+      <td>0.94</td>
+      <td>0.50</td>
+      <td>1.17</td>
+      <td>27.89</td>
+      <td>29.12</td>
+      <td>49.81</td>
+      <td>57.25</td>
+      <td>55.5</td>
+      <td>168.3</td>
+      <td>36.3</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <td colspan="12"><strong>AlphaFold2-Generated</strong></td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/casp15_af2_predictions">AlphaFold2</a></td>
+      <td>0.90</td>
+      <td>0.58</td>
+      <td>1.11</td>
+      <td>28.05</td>
+      <td>27.90</td>
+      <td>48.04</td>
+      <td>55.00</td>
+      <td>53.9</td>
+      <td>48.2</td>
+      <td>2.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/flowpacker_cluster_conf_predictions">FlowPacker</a></td>
+      <td>0.94</td>
+      <td>0.59</td>
+      <td>1.15</td>
+      <td>29.38</td>
+      <td>29.18</td>
+      <td>50.18</td>
+      <td>57.00</td>
+      <td>55.1</td>
+      <td>100.4</td>
+      <td>13.9</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/pippack_ensembled_predictions">PIPPack</a></td>
+      <td>0.96</td>
+      <td>0.61</td>
+      <td>1.19</td>
+      <td>30.08</td>
+      <td>29.89</td>
+      <td>50.22</td>
+      <td>56.32</td>
+      <td>53.5</td>
+      <td>124.5</td>
+      <td>27.3</td>
+      <td>9.4</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/diffpack_confidence_predictions">DiffPack</a></td>
+      <td>0.99</td>
+      <td>0.63</td>
+      <td>1.21</td>
+      <td>31.07</td>
+      <td>30.10</td>
+      <td>51.90</td>
+      <td>56.39</td>
+      <td>52.8</td>
+      <td>69.7</td>
+      <td>13.7</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/attnpacker_predictions">AttnPacker</a></td>
+      <td>0.92</td>
+      <td>0.61</td>
+      <td>1.12</td>
+      <td>30.34</td>
+      <td>31.48</td>
+      <td>52.10</td>
+      <td>55.52</td>
+      <td>50.4</td>
+      <td>87.9</td>
+      <td>23.6</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/dlpacker_score_predictions">DLPacker</a></td>
+      <td>0.97</td>
+      <td>0.62</td>
+      <td>1.18</td>
+      <td>30.94</td>
+      <td>31.05</td>
+      <td>55.90</td>
+      <td>69.34</td>
+      <td>51.3</td>
+      <td>84.2</td>
+      <td>12.9</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/faspr_predictions">FASPR</a></td>
+      <td>1.06</td>
+      <td>0.71</td>
+      <td>1.27</td>
+      <td>33.67</td>
+      <td>32.53</td>
+      <td>53.56</td>
+      <td>59.75</td>
+      <td>50.0</td>
+      <td>147.0</td>
+      <td>32.5</td>
+      <td>7.9</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/pyrosetta_packer_predictions">PyRosetta</a></td>
+      <td>1.04</td>
+      <td>0.67</td>
+      <td>1.26</td>
+      <td>32.78</td>
+      <td>32.67</td>
+      <td>51.42</td>
+      <td>58.65</td>
+      <td>51.0</td>
+      <td>91.6</td>
+      <td>10.7</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/scwrl4_predictions">SCWRL4</a></td>
+      <td>1.07</td>
+      <td>0.71</td>
+      <td>1.29</td>
+      <td>33.95</td>
+      <td>32.73</td>
+      <td>53.35</td>
+      <td>61.55</td>
+      <td>50.0</td>
+      <td>160.7</td>
+      <td>35.0</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td colspan="12"><strong>AlphaFold3-Generated</strong></td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/casp15_af3_predictions">AlphaFold3</a></td>
+      <td>0.95</td>
+      <td>0.60</td>
+      <td>1.16</td>
+      <td>30.18</td>
+      <td>28.90</td>
+      <td>48.92</td>
+      <td>53.94</td>
+      <td>53.8</td>
+      <td>58.4</td>
+      <td>8.1</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/flowpacker_cluster_conf_predictions">FlowPacker</a></td>
+      <td>0.98</td>
+      <td>0.62</td>
+      <td>1.19</td>
+      <td>31.12</td>
+      <td>30.44</td>
+      <td>50.88</td>
+      <td>57.02</td>
+      <td>53.7</td>
+      <td>92.5</td>
+      <td>13.3</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/pippack_ensembled_predictions">PIPPack</a></td>
+      <td>1.00</td>
+      <td>0.64</td>
+      <td>1.22</td>
+      <td>31.57</td>
+      <td>30.65</td>
+      <td>49.81</td>
+      <td>57.75</td>
+      <td>52.7</td>
+      <td>115.7</td>
+      <td>26.5</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/diffpack_confidence_predictions">DiffPack</a></td>
+      <td>1.02</td>
+      <td>0.66</td>
+      <td>1.23</td>
+      <td>32.44</td>
+      <td>31.03</td>
+      <td>52.27</td>
+      <td>61.20</td>
+      <td>51.6</td>
+      <td>70.8</td>
+      <td>14.5</td>
+      <td>4.6</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/attnpacker_predictions">AttnPacker</a></td>
+      <td>0.96</td>
+      <td>0.64</td>
+      <td>1.15</td>
+      <td>31.52</td>
+      <td>32.98</td>
+      <td>53.16</td>
+      <td>55.48</td>
+      <td>50.1</td>
+      <td>83.4</td>
+      <td>22.5</td>
+      <td>7.2</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/dlpacker_score_predictions">DLPacker</a></td>
+      <td>1.01</td>
+      <td>0.65</td>
+      <td>1.22</td>
+      <td>32.59</td>
+      <td>32.39</td>
+      <td>55.95</td>
+      <td>72.09</td>
+      <td>50.1</td>
+      <td>77.3</td>
+      <td>12.9</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/faspr_predictions">FASPR</a></td>
+      <td>1.08</td>
+      <td>0.72</td>
+      <td>1.29</td>
+      <td>34.11</td>
+      <td>32.03</td>
+      <td>53.99</td>
+      <td>60.17</td>
+      <td>49.7</td>
+      <td>133.2</td>
+      <td>28.6</td>
+      <td>6.6</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/pyrosetta_packer_predictions">PyRosetta</a></td>
+      <td>1.06</td>
+      <td>0.70</td>
+      <td>1.28</td>
+      <td>33.66</td>
+      <td>32.78</td>
+      <td>52.45</td>
+      <td>58.19</td>
+      <td>50.5</td>
+      <td>81.7</td>
+      <td>8.3</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/scwrl4_predictions">SCWRL4</a></td>
+      <td>1.10</td>
+      <td>0.73</td>
+      <td>1.31</td>
+      <td>34.70</td>
+      <td>32.80</td>
+      <td>52.67</td>
+      <td>60.59</td>
+      <td>49.4</td>
+      <td>147.9</td>
+      <td>31.7</td>
+      <td>7.3</td>
+    </tr>
+  </tbody>
+</table>
