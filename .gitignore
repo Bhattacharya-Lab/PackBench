@@ -169,3 +169,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Unnecessary scripts
+data_to_markdown.py
+data_to_markdown_2.py
+casp14_data_table.md
+casp15_data_table.md

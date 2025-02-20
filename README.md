@@ -12,10 +12,10 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
   <thead>
     <tr>
       <th></th>
-      <th colspan="3"><strong>RMSD (Å)</strong></th>
-      <th colspan="4"><strong>&chi;-MAE (°)</strong></th>
-      <th><strong>&chi;-Acc. (%)</strong></th>
-      <th colspan="3"><strong>Steric Clashes (#)</strong></th>
+      <th colspan="3"><strong>RMSD (Å) ↓</strong></th>
+      <th colspan="4"><strong>&chi;-MAE (°) ↓</strong></th>
+      <th><strong>RR (%) ↑</strong></th>
+      <th colspan="3"><strong>Steric Clashes (#) ↓</strong></th>
     </tr>
     <tr>
       <th><strong>Input Backbone</strong></th>
@@ -37,7 +37,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td colspan="12"><strong>Native</strong></td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/flowpacker_cluster_conf_predictions">FlowPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/flowpacker_cluster_conf_predictions/README.md">FlowPacker</a></td>
       <td>0.80</td>
       <td>0.40</td>
       <td>1.01</td>
@@ -51,7 +51,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>6.4</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/pippack_ensembled_predictions">PIPPack</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/pippack_ensembled_predictions/README.md">PIPPack</a></td>
       <td>0.79</td>
       <td>0.43</td>
       <td>0.99</td>
@@ -65,7 +65,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>14.4</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/diffpack_confidence_predictions">DiffPack</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/diffpack_confidence_predictions/README.md">DiffPack</a></td>
       <td>0.79</td>
       <td>0.41</td>
       <td>0.98</td>
@@ -79,7 +79,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>9.8</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/attnpacker_predictions">AttnPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/attnpacker_predictions/README.md">AttnPacker</a></td>
       <td>0.79</td>
       <td>0.44</td>
       <td>0.98</td>
@@ -93,7 +93,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>8.1</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/dlpacker_score_predictions">DLPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/dlpacker_score_predictions/README.md">DLPacker</a></td>
       <td>0.90</td>
       <td>0.50</td>
       <td>1.11</td>
@@ -107,7 +107,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>5.1</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/faspr_predictions">FASPR</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/faspr_predictions/README.md">FASPR</a></td>
       <td>1.03</td>
       <td>0.62</td>
       <td>1.24</td>
@@ -121,7 +121,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>13.0</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/pyrosetta_packer_predictions">PyRosetta</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/pyrosetta_packer_predictions/README.md">PyRosetta</a></td>
       <td>1.00</td>
       <td>0.55</td>
       <td>1.23</td>
@@ -135,7 +135,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>8.4</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/scwrl4_predictions">SCWRL4</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_native_bb/scwrl4_predictions/README.md">SCWRL4</a></td>
       <td>1.04</td>
       <td>0.61</td>
       <td>1.26</td>
@@ -152,7 +152,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td colspan="12"><strong>AlphaFold2-Generated</strong></td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/casp14_af2_predictions">AlphaFold2</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/casp14_af2_predictions/README.md">AlphaFold2</a></td>
       <td>1.07</td>
       <td>0.66</td>
       <td>1.26</td>
@@ -166,7 +166,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>0.0</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/flowpacker_cluster_conf_predictions">FlowPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/flowpacker_cluster_conf_predictions/README.md">FlowPacker</a></td>
       <td>1.09</td>
       <td>0.67</td>
       <td>1.30</td>
@@ -180,7 +180,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>2.7</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/pippack_ensembled_predictions">PIPPack</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/pippack_ensembled_predictions/README.md">PIPPack</a></td>
       <td>1.10</td>
       <td>0.68</td>
       <td>1.30</td>
@@ -194,7 +194,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>6.5</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/diffpack_confidence_predictions">DiffPack</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/diffpack_confidence_predictions/README.md">DiffPack</a></td>
       <td>1.12</td>
       <td>0.70</td>
       <td>1.34</td>
@@ -208,7 +208,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>3.7</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/attnpacker_predictions">AttnPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/attnpacker_predictions/README.md">AttnPacker</a></td>
       <td>1.06</td>
       <td>0.68</td>
       <td>1.25</td>
@@ -222,7 +222,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>4.5</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/dlpacker_score_predictions">DLPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/dlpacker_score_predictions/README.md">DLPacker</a></td>
       <td>1.11</td>
       <td>0.70</td>
       <td>1.33</td>
@@ -236,7 +236,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>2.1</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/faspr_predictions">FASPR</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/faspr_predictions/README.md">FASPR</a></td>
       <td>1.18</td>
       <td>0.75</td>
       <td>1.38</td>
@@ -250,7 +250,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>5.7</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/pyrosetta_packer_predictions">PyRosetta</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/pyrosetta_packer_predictions/README.md">PyRosetta</a></td>
       <td>1.16</td>
       <td>0.72</td>
       <td>1.38</td>
@@ -264,7 +264,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>1.2</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/scwrl4_predictions">SCWRL4</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af2_bb/scwrl4_predictions/README.md">SCWRL4</a></td>
       <td>1.20</td>
       <td>0.77</td>
       <td>1.40</td>
@@ -281,7 +281,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td colspan="12"><strong>AlphaFold3-Generated</strong></td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/casp14_af3_predictions">AlphaFold3</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/casp14_af3_predictions/README.md">AlphaFold3</a></td>
       <td>1.04</td>
       <td>0.64</td>
       <td>1.25</td>
@@ -295,7 +295,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>0.7</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/flowpacker_cluster_conf_predictions">FlowPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/flowpacker_cluster_conf_predictions/README.md">FlowPacker</a></td>
       <td>1.07</td>
       <td>0.66</td>
       <td>1.29</td>
@@ -309,7 +309,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>2.5</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/pippack_ensembled_predictions">PIPPack</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/pippack_ensembled_predictions/README.md">PIPPack</a></td>
       <td>1.08</td>
       <td>0.67</td>
       <td>1.29</td>
@@ -323,7 +323,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>6.3</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/diffpack_confidence_predictions">DiffPack</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/diffpack_confidence_predictions/README.md">DiffPack</a></td>
       <td>1.11</td>
       <td>0.69</td>
       <td>1.33</td>
@@ -337,7 +337,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>4.0</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/attnpacker_predictions">AttnPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/attnpacker_predictions/README.md">AttnPacker</a></td>
       <td>1.04</td>
       <td>0.66</td>
       <td>1.24</td>
@@ -351,7 +351,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>4.3</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/dlpacker_score_predictions">DLPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/dlpacker_score_predictions/README.md">DLPacker</a></td>
       <td>1.10</td>
       <td>0.69</td>
       <td>1.31</td>
@@ -365,7 +365,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>2.2</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/faspr_predictions">FASPR</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/faspr_predictions/README.md">FASPR</a></td>
       <td>1.16</td>
       <td>0.76</td>
       <td>1.36</td>
@@ -379,7 +379,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>5.7</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/pyrosetta_packer_predictions">PyRosetta</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/pyrosetta_packer_predictions/README.md">PyRosetta</a></td>
       <td>1.15</td>
       <td>0.71</td>
       <td>1.37</td>
@@ -393,7 +393,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>1.4</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/scwrl4_predictions">SCWRL4</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp14/repacking_af3_bb/scwrl4_predictions/README.md">SCWRL4</a></td>
       <td>1.17</td>
       <td>0.77</td>
       <td>1.37</td>
@@ -415,10 +415,10 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
   <thead>
     <tr>
       <th></th>
-      <th colspan="3"><strong>RMSD (Å)</strong></th>
-      <th colspan="4"><strong>&chi;-MAE (°)</strong></th>
-      <th><strong>&chi;-Acc. (%)</strong></th>
-      <th colspan="3"><strong>Steric Clashes (#)</strong></th>
+      <th colspan="3"><strong>RMSD (Å) ↓</strong></th>
+      <th colspan="4"><strong>&chi;-MAE (°) ↓</strong></th>
+      <th><strong>RR (%) ↑</strong></th>
+      <th colspan="3"><strong>Steric Clashes (#) ↓</strong></th>
     </tr>
     <tr>
       <th><strong>Input Backbone</strong></th>
@@ -440,7 +440,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td colspan="12"><strong>Native</strong></td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/flowpacker_cluster_conf_predictions">FlowPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/flowpacker_cluster_conf_predictions/README.md">FlowPacker</a></td>
       <td>0.69</td>
       <td>0.33</td>
       <td>0.90</td>
@@ -454,7 +454,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>3.3</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/pippack_ensembled_predictions">PIPPack</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/pippack_ensembled_predictions/README.md">PIPPack</a></td>
       <td>0.70</td>
       <td>0.34</td>
       <td>0.91</td>
@@ -468,7 +468,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>10.9</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/diffpack_confidence_predictions">DiffPack</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/diffpack_confidence_predictions/README.md">DiffPack</a></td>
       <td>0.68</td>
       <td>0.34</td>
       <td>0.87</td>
@@ -482,7 +482,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>7.2</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/attnpacker_predictions">AttnPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/attnpacker_predictions/README.md">AttnPacker</a></td>
       <td>0.71</td>
       <td>0.37</td>
       <td>0.90</td>
@@ -496,7 +496,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>9.5</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/dlpacker_score_predictions">DLPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/dlpacker_score_predictions/README.md">DLPacker</a></td>
       <td>0.76</td>
       <td>0.38</td>
       <td>0.97</td>
@@ -510,7 +510,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>3.2</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/faspr_predictions">FASPR</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/faspr_predictions/README.md">FASPR</a></td>
       <td>0.92</td>
       <td>0.52</td>
       <td>1.14</td>
@@ -524,7 +524,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>9.7</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/pyrosetta_packer_predictions">PyRosetta</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/pyrosetta_packer_predictions/README.md">PyRosetta</a></td>
       <td>0.87</td>
       <td>0.43</td>
       <td>1.12</td>
@@ -538,7 +538,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>3.1</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/scwrl4_predictions">SCWRL4</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_native_bb/scwrl4_predictions/README.md">SCWRL4</a></td>
       <td>0.94</td>
       <td>0.50</td>
       <td>1.17</td>
@@ -555,7 +555,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td colspan="12"><strong>AlphaFold2-Generated</strong></td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/casp15_af2_predictions">AlphaFold2</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/casp15_af2_predictions/README.md">AlphaFold2</a></td>
       <td>0.90</td>
       <td>0.58</td>
       <td>1.11</td>
@@ -569,7 +569,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>0.0</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/flowpacker_cluster_conf_predictions">FlowPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/flowpacker_cluster_conf_predictions/README.md">FlowPacker</a></td>
       <td>0.94</td>
       <td>0.59</td>
       <td>1.15</td>
@@ -583,7 +583,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>2.3</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/pippack_ensembled_predictions">PIPPack</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/pippack_ensembled_predictions/README.md">PIPPack</a></td>
       <td>0.96</td>
       <td>0.61</td>
       <td>1.19</td>
@@ -597,7 +597,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>9.4</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/diffpack_confidence_predictions">DiffPack</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/diffpack_confidence_predictions/README.md">DiffPack</a></td>
       <td>0.99</td>
       <td>0.63</td>
       <td>1.21</td>
@@ -611,7 +611,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>4.5</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/attnpacker_predictions">AttnPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/attnpacker_predictions/README.md">AttnPacker</a></td>
       <td>0.92</td>
       <td>0.61</td>
       <td>1.12</td>
@@ -625,7 +625,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>7.7</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/dlpacker_score_predictions">DLPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/dlpacker_score_predictions/README.md">DLPacker</a></td>
       <td>0.97</td>
       <td>0.62</td>
       <td>1.18</td>
@@ -639,7 +639,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>2.7</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/faspr_predictions">FASPR</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/faspr_predictions/README.md">FASPR</a></td>
       <td>1.06</td>
       <td>0.71</td>
       <td>1.27</td>
@@ -653,7 +653,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>7.9</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/pyrosetta_packer_predictions">PyRosetta</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/pyrosetta_packer_predictions/README.md">PyRosetta</a></td>
       <td>1.04</td>
       <td>0.67</td>
       <td>1.26</td>
@@ -667,7 +667,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>2.4</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/scwrl4_predictions">SCWRL4</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af2_bb/scwrl4_predictions/README.md">SCWRL4</a></td>
       <td>1.07</td>
       <td>0.71</td>
       <td>1.29</td>
@@ -684,7 +684,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td colspan="12"><strong>AlphaFold3-Generated</strong></td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/casp15_af3_predictions">AlphaFold3</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/casp15_af3_predictions/README.md">AlphaFold3</a></td>
       <td>0.95</td>
       <td>0.60</td>
       <td>1.16</td>
@@ -698,7 +698,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>1.0</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/flowpacker_cluster_conf_predictions">FlowPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/flowpacker_cluster_conf_predictions/README.md">FlowPacker</a></td>
       <td>0.98</td>
       <td>0.62</td>
       <td>1.19</td>
@@ -712,7 +712,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>2.5</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/pippack_ensembled_predictions">PIPPack</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/pippack_ensembled_predictions/README.md">PIPPack</a></td>
       <td>1.00</td>
       <td>0.64</td>
       <td>1.22</td>
@@ -726,7 +726,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>9.0</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/diffpack_confidence_predictions">DiffPack</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/diffpack_confidence_predictions/README.md">DiffPack</a></td>
       <td>1.02</td>
       <td>0.66</td>
       <td>1.23</td>
@@ -740,7 +740,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>4.6</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/attnpacker_predictions">AttnPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/attnpacker_predictions/README.md">AttnPacker</a></td>
       <td>0.96</td>
       <td>0.64</td>
       <td>1.15</td>
@@ -754,7 +754,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>7.2</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/dlpacker_score_predictions">DLPacker</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/dlpacker_score_predictions/README.md">DLPacker</a></td>
       <td>1.01</td>
       <td>0.65</td>
       <td>1.22</td>
@@ -768,7 +768,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>3.0</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/faspr_predictions">FASPR</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/faspr_predictions/README.md">FASPR</a></td>
       <td>1.08</td>
       <td>0.72</td>
       <td>1.29</td>
@@ -782,7 +782,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>6.6</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/pyrosetta_packer_predictions">PyRosetta</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/pyrosetta_packer_predictions/README.md">PyRosetta</a></td>
       <td>1.06</td>
       <td>0.70</td>
       <td>1.28</td>
@@ -796,7 +796,7 @@ _**Note**: To see per-target results, simply click on the corresponding tool in 
       <td>1.7</td>
     </tr>
     <tr>
-      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/scwrl4_predictions">SCWRL4</a></td>
+      <td style="padding-left: 20px;"><a href="./metrics/casp15/repacking_af3_bb/scwrl4_predictions/README.md">SCWRL4</a></td>
       <td>1.10</td>
       <td>0.73</td>
       <td>1.31</td>
