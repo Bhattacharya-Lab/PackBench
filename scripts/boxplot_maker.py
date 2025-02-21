@@ -90,6 +90,18 @@ def make_boxplots():
         linewidth=1.0,
         color='yellow'
     )
+    palette = {
+        "Original AlphaFold Side-Chains": "#7E5D55",
+        "Weighted Combination": "#57A9B6",
+        "FlowPacker": "#FF7E4D",
+        "PIPPack": "#7C50F0",
+        "DiffPack": "#F0CE4E",
+        "AttnPacker": "#2356E0",
+        "DLPacker": "#9EE74A",
+        "FASPR": "#CAB4FF",
+        "PyRosetta Packer": "#FF0000",
+        "SCWRL4": "#808080"
+    }
     ax = sns.boxplot(
         x=backbone_type_name,
         y=rr_column_name,
@@ -97,10 +109,11 @@ def make_boxplots():
         data=mdf,
         showmeans=True,
         meanline=True,
-        meanprops=meanlineprops
+        meanprops=meanlineprops,
+        palette=palette
     )
     ax.set_ylim(0, 100)
-    plt.legend(loc="upper left", bbox_to_anchor=(1, 1), title=tool_word)
+    plt.legend(loc="lower center", bbox_to_anchor=(1, 1), title=tool_word, ncol=3)
 
     # Saves the boxplots
     filename = f"{casp}_rr_boxplots.png"
