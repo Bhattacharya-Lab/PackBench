@@ -11,7 +11,7 @@ combination_name = "combination"
 tools_to_latex = {
     'af2': r'AlphaFold2',
     'af3': r'AlphaFold3',
-    combination_name: "Weighted Combination",
+    combination_name: "Our integrative approach",
     'flowpacker_cluster_conf': r'FlowPacker',
     'pippack_ensembled': r'PIPPack',
     'diffpack_confidence': r'DiffPack',
@@ -113,8 +113,8 @@ def delta_plots(overall_dict):
                 else:
                     metric_name += key
             p_value = p_values[metric_name]
-            color = (0, 0, 1, 1) if p_value < 0.05 \
-                else (0.5, 0.5, 0.9, 1)
+            color = (0, 0, 0, 1) if p_value < 0.05 \
+                else (0.5, 0.5, 0.5, 1)
             colors.append(color)            
         y_positions = range(len(deltas))
 
