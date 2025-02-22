@@ -1,4 +1,4 @@
-# A side-chain *pack*ing *bench*marking study for non-native backbones
+# Revisiting protein side-chain packing in the post‐AlphaFold era
 
 by Sriniketh Vangaru, Debswapna Bhattacharya
 
@@ -6,9 +6,9 @@ by Sriniketh Vangaru, Debswapna Bhattacharya
 
 # Summary
 
-This repository contains the code and an overview of the results from our comprehensive benchmarking of various protein side-chain packing (PSCP) tools when given non-native backbones as input.
+This repository contains the code and an overview of the results from our large-scale benchmarking of the predictive performance of various protein side-chain packing (PSCP) methods.
 
-We generated protein structures using AlphaFold from the proteins' sequences alone, ran the PSCP tools on both these non-native backbones and the original native backbones, and evaluated their performance on a variety of metrics (described [below](#evaluation-metrics)), primarily for the purpose of comparing them to AlphaFold's side-chain performance. Additionally, to evaluate how these tools could be augmented by AlphaFold's self-assessment scores (specifically, predicted lDDT), we combined the tools using a simple Monte Carlo energy minimization procedure and assessed it as well. The relevant scripts created for these studies are in the [scripts](./scripts/) folder.
+We generated predicted protein structures using AlphaFold2 and AlphaFold3, ran the PSCP tools on the experimental backbone conformations as inputs as well as the AlphaFold-generated backbone coordinates as inputs, and evaluated their performance on a variety of metrics (described [below](#evaluation-metrics)). We further explored the effectiveness of leveraging the self-assessment confidence scores from AlphaFold by implementing a confidence-aware integrative approach that performs a weighted combination of several PSCP methods. The relevant scripts created for these studies are in the [scripts](./scripts/) folder.
 
 # Benchmarking datasets
 
