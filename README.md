@@ -2,9 +2,11 @@
 
 by Sriniketh Vangaru, Debswapna Bhattacharya
 
-[[bioRxiv](https://www.biorxiv.org/content/10.1101/2025.02.22.639681v1)] [[pdf](https://www.biorxiv.org/content/10.1101/2025.02.22.639681v1.full.pdf)]
+<a href="https://www.biorxiv.org/content/10.1101/2025.02.22.639681v1"><img src="https://img.shields.io/badge/bioRxiv-10.1101%2F2025.02.22.639681-red" alt="bioRxiv badge"></a>
 
-<a href="https://doi.org/10.5281/zenodo.14890225"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14890225.svg" alt="DOI"></a>
+<a href="https://www.biorxiv.org/content/10.1101/2025.02.22.639681v1.full.pdf"><img src="https://img.shields.io/badge/PDF-10.1101%2F2025.02.22.639681-red" alt="bioRxiv PDF badge"></a>
+
+<a href="https://doi.org/10.5281/zenodo.14890225"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14890225.svg" alt="Zenodo badge"></a>
 
 # Summary
 
