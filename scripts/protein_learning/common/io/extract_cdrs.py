@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from typing import List
 
 from protein_learning.common.io.pdb_utils import extract_pdb_seq_from_pdb_file

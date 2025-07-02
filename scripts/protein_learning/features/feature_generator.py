@@ -1,4 +1,10 @@
-"""Feature Generator ABC and Default implementation"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Feature Generator ABC and Default implementation
+"""
 from __future__ import annotations
 
 from abc import abstractmethod

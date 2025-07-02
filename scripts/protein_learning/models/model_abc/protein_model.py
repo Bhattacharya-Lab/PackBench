@@ -1,4 +1,10 @@
-"""Structure Prediction Model"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Structure Prediction Model
+"""
 from abc import abstractmethod
 from typing import Dict, Any, List
 

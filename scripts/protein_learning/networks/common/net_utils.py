@@ -1,4 +1,10 @@
-"""Helper functions for graph transformer"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Helper functions for graph transformer
+"""
 from __future__ import annotations
 
 from contextlib import contextmanager

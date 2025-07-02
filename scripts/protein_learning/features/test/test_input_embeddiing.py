@@ -1,4 +1,10 @@
-"""Tests for input embedding"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Tests for input embedding
+"""
 from protein_learning.features.feature_config import InputFeatureConfig, AA_ALPHABET
 from protein_learning.features.feature_generator import DefaultFeatureGenerator
 from protein_learning.features.input_embedding import InputEmbedding

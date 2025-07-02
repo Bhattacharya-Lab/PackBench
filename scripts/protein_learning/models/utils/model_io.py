@@ -1,4 +1,10 @@
-"""Helper functions for loading and saving model configs"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Helper functions for loading and saving model configs
+"""
 import os
 import sys
 from argparse import Namespace

@@ -1,4 +1,10 @@
-"""Coordinate Based Loss Functions"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Coordinate Based Loss Functions
+"""
 import random
 from typing import Optional, List, Callable, Dict
 

@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 import torch
 from torch import Tensor
 from typing import Tuple, List

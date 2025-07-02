@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from math import sqrt
 import torch
 import torch.nn.functional as F  # noqa

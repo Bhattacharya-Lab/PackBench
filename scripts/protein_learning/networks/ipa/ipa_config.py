@@ -1,4 +1,10 @@
-"""Configuration for Invariant Point Attention"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Configuration for Invariant Point Attention
+"""
 from typing import Optional
 from protein_learning.networks.config.net_config import NetConfig
 from typing import Tuple, Union, List

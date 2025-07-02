@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 import torch
 from einops import rearrange
 from torch import nn

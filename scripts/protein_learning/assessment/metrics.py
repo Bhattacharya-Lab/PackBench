@@ -1,4 +1,9 @@
-"""Functions for computing scoring metrics on proteins
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Functions for computing scoring metrics on proteins
 """
 import math
 from itertools import combinations

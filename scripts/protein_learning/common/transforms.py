@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 # Copyright (c) Meta Platforms, Inc. and affiliates.
 # All rights reserved.
 #

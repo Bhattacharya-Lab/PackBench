@@ -1,4 +1,9 @@
-"""Helper methods for generating model input features
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Helper methods for generating model input features
 """
 from __future__ import annotations
 

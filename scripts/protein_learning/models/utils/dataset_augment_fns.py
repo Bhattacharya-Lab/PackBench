@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from typing import Tuple
 
 from protein_learning.common.data.data_types.protein import Protein

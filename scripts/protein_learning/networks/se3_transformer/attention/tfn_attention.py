@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 import torch
 from protein_learning.networks.common.helpers.neighbor_utils import NeighborInfo
 from protein_learning.networks.tfn.repr.fiber import Fiber, chunk_fiber

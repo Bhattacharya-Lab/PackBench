@@ -1,4 +1,9 @@
-"""Feature representation
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Feature representation
 """
 from __future__ import annotations
 

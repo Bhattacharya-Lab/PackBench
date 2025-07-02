@@ -1,4 +1,10 @@
-"""Default Loss Function for protein learning"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Default Loss Function for protein learning
+"""
 
 from enum import Enum
 from typing import Optional, List, Tuple, Union

@@ -1,4 +1,10 @@
-"""Global constants"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Global constants
+"""
 import logging
 import sys
 from datetime import datetime

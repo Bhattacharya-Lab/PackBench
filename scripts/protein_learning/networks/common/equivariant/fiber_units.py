@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from typing import Dict, Optional, Callable
 
 import torch

@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 import torch
 from torch import Tensor, einsum
 from protein_learning.networks.common.helpers.torch_utils import to_rel_pos, ndim, get_max_neg_value, safe_norm

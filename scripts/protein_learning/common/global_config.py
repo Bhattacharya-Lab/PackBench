@@ -1,4 +1,10 @@
-"""Global Model configuration"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Global Model configuration
+"""
 import os
 import sys
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter

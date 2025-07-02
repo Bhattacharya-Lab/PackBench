@@ -1,4 +1,9 @@
-"""Input for protein-based learning model
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Input for protein-based learning model
 """
 from __future__ import annotations
 

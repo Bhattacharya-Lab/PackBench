@@ -1,4 +1,10 @@
-"""Networks for Computing Residue Feature Loss"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Networks for Computing Residue Feature Loss
+"""
 from abc import abstractmethod
 from typing import Optional
 

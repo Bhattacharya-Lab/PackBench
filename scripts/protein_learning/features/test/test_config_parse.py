@@ -1,4 +1,10 @@
-"""Tests for parsing feature config"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Tests for parsing feature config
+"""
 from protein_learning.models.utils.opt_parse import add_feature_options
 from protein_learning.models.model_abc.train import get_input_feature_config
 from argparse import ArgumentParser

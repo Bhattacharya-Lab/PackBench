@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 import torch
 
 torch.multiprocessing.set_sharing_strategy('file_system')

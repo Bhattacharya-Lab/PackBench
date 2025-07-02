@@ -1,4 +1,10 @@
-"""TFN-Transformer"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+TFN-Transformer
+"""
 from typing import Tuple, Dict, Optional
 
 from torch import Tensor

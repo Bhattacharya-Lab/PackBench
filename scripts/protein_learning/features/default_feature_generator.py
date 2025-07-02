@@ -1,4 +1,10 @@
-"""Default Feature Generation"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Default Feature Generation
+"""
 from __future__ import annotations
 
 import random

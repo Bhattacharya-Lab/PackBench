@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from typing import Dict, Tuple, Optional
 
 from einops import rearrange  # noqa

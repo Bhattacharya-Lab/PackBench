@@ -1,4 +1,9 @@
-"""Utility functions for working with pdbs
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Utility functions for working with pdbs
 
 Adapted from Raptorx3DModelling/Common/PDBUtils.py
 """

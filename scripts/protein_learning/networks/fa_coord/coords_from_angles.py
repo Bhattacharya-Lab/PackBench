@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 import torch
 from torch import nn, Tensor
 from protein_learning.networks.common.of_rigid_utils import Rigid, Rotation

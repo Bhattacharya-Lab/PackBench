@@ -1,4 +1,10 @@
-"""Invariant Coordinate Prediction"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Invariant Coordinate Prediction
+"""
 from typing import Optional
 
 import torch.nn.functional as F  # noqa

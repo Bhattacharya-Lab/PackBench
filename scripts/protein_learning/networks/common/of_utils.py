@@ -1,4 +1,9 @@
-"""Networks and utility functions apadted from:
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Networks and utility functions apadted from:
 https://github.com/aqlaboratory/openfold/blob/main/openfold/model/primitives.py
 """
 import torch

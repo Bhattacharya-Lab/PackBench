@@ -1,4 +1,10 @@
-"""Functions for performing Pair feature updates via triangle multiplication and attention"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Functions for performing Pair feature updates via triangle multiplication and attention
+"""
 from typing import Optional
 
 import torch

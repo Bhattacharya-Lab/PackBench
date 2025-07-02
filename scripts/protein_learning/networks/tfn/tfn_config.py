@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from typing import NamedTuple, Union, Tuple, Dict, Optional
 from protein_learning.networks.tfn.repr.fiber import Fiber
 from protein_learning.networks.common.utils import update_named_tuple

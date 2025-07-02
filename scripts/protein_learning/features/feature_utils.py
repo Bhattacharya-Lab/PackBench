@@ -1,4 +1,9 @@
-"""Utility classes and functions for feature representations
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Utility classes and functions for feature representations
 """
 from __future__ import annotations
 

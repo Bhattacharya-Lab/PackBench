@@ -1,4 +1,10 @@
-"""Functions for performing Scalar Feature Attention Updates"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Functions for performing Scalar Feature Attention Updates
+"""
 from typing import Optional
 
 import torch

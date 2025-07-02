@@ -1,4 +1,10 @@
-"""Model Output"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Model Output
+"""
 
 from __future__ import annotations
 

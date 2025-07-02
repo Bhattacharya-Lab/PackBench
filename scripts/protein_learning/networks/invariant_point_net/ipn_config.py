@@ -1,4 +1,10 @@
-"""Invariant Point Network Config"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Invariant Point Network Config
+"""
 from typing import Optional
 from protein_learning.networks.config.net_config import NetConfig
 from typing import Union, Tuple, List

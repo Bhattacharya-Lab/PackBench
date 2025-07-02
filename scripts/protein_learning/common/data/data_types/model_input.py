@@ -1,4 +1,10 @@
-"""Model Input data type"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Model Input data type
+"""
 
 from __future__ import annotations
 

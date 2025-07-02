@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from collections import namedtuple
 from itertools import product
 from typing import Dict, Tuple, Union

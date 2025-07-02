@@ -1,4 +1,10 @@
-"""Invariant Point Attention"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Invariant Point Attention
+"""
 
 import torch
 import torch.nn.functional as F  # noqa

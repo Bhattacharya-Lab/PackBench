@@ -1,4 +1,9 @@
-"""Functions adapted from OpenFold:
+"""
+Adapted from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Functions adapted from OpenFold:
 
 https://github.com/aqlaboratory/openfold/blob/59277de16825cfdafe37033012d0530595b9ad6d/openfold/np/residue_constants.py
 https://github.com/aqlaboratory/openfold/blob/59277de16825cfdafe37033012d0530595b9ad6d/openfold/data/data_transforms.py
@@ -328,7 +333,7 @@ def atom37_to_torsion_angles(
             Torsion angles mask
     """
     device = "cpu" if protein[prefix + "aatype"].device.type == "cpu" else "cuda"
-    with disable_tf32(), torch.autocast(device_type=device, enabled=False):
+    with disable_tf32():
         N, CA, C, O = [pc.ALL_ATOM_POSNS[x] for x in "N,CA,C,O".split(",")]
         aatype = protein[prefix + "aatype"]
         assert torch.max(aatype) < 20, f"{torch.max(aatype)}"

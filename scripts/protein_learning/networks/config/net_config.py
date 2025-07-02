@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from abc import ABC, abstractmethod, abstractproperty
 from typing import Union, Tuple
 

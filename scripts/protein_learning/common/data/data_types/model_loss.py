@@ -1,4 +1,10 @@
-"""Model Loss"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Model Loss
+"""
 
 from __future__ import annotations
 

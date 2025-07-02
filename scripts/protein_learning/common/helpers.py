@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 import time
 from contextlib import contextmanager
 from typing import Optional, Tuple, Any, Union

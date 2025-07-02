@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 import time
 from abc import abstractmethod
 from typing import Union, Tuple, Dict, Optional

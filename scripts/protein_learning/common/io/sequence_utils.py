@@ -1,4 +1,9 @@
-"""Utility functions for working with protein sequences
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Utility functions for working with protein sequences
 """
 import os
 from Bio import SeqIO # noqa

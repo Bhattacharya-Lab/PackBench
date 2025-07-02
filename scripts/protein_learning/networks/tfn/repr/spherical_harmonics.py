@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from math import pi, sqrt
 from functools import reduce
 from operator import mul

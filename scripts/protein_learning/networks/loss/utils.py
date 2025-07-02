@@ -1,4 +1,9 @@
-"""Helper functions for computing model loss
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Helper functions for computing model loss
 """
 from typing import Optional, Dict, List
 

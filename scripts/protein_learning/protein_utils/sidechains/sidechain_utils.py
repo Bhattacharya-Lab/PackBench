@@ -1,4 +1,10 @@
-"""Utility functions for working with protein side-chains"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Utility functions for working with protein side-chains
+"""
 from typing import List, Dict, Tuple
 
 import torch

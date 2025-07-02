@@ -1,4 +1,10 @@
-"""SE3-Transformer configuration"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+SE3-Transformer configuration
+"""
 from __future__ import annotations
 
 from typing import Union, Tuple, Dict, Optional, Any, Callable

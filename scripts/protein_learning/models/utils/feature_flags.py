@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 import random
 from typing import List, Tuple, Optional, Dict
 

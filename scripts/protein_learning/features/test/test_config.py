@@ -1,4 +1,10 @@
-"""Tests for feature config"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Tests for feature config
+"""
 from protein_learning.features.feature_config import InputFeatureConfig, FeatureName, FeatureEmbeddingTy
 
 

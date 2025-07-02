@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from argparse import Namespace
 
 from protein_learning.common.helpers import default, exists

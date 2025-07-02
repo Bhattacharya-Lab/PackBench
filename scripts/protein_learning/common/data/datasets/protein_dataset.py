@@ -1,4 +1,10 @@
-"""Protein Complex dataset"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Protein Complex dataset
+"""
 from typing import Optional, List, Any, Callable, Tuple, Union
 
 import torch

@@ -1,4 +1,9 @@
-"""Constants used in feature generation
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Constants used in feature generation
 """
 import numpy as np
 

@@ -1,4 +1,9 @@
-"""Modules For Computing Violation Loss
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Modules For Computing Violation Loss
 
 (1) InterResidueVDWRepulsiveLoss
 (2) BackboneBondLenDeviationLoss

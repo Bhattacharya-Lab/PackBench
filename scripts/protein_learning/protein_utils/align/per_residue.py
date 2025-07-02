@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from math import sqrt
 from typing import Tuple, Optional
 from torch import Tensor

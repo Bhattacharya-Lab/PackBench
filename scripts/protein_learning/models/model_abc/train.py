@@ -1,4 +1,10 @@
-"""Denovo Complex Design"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Denovo Complex Design
+"""
 import os
 
 # make sure cuda devices are listed according to PCI_BUS_ID before any torch modules are loaded

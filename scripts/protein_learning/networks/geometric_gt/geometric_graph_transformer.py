@@ -1,4 +1,10 @@
-"""Geometric Graph Transformer"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Geometric Graph Transformer
+"""
 from typing import Optional, Tuple
 
 import torch.nn.functional as F  # noqa

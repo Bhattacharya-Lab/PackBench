@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from protein_learning.common.protein_constants import ONE_TO_THREE
 import torch
 

@@ -1,4 +1,10 @@
-"""Masked Feature Generation"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Masked Feature Generation
+"""
 from __future__ import annotations
 
 from functools import partial

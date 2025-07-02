@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 from __future__ import annotations
 
 from typing import Tuple, Any

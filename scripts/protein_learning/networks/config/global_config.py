@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 import os
 import sys
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter

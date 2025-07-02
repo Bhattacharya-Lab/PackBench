@@ -1,4 +1,9 @@
-"""Input Feature Embedding
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Input Feature Embedding
 """
 from typing import Tuple, Optional, List, Union, Dict
 

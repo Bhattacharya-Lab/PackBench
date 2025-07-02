@@ -1,4 +1,10 @@
-"""Get stats from ModelOut object"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Get stats from ModelOut object
+"""
 from typing import Dict, Optional
 
 import torch

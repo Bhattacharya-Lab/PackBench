@@ -1,3 +1,5 @@
+"""Retrieved from https://github.com/MattMcPartlon/AttnPacker"""
+
 import torch
 from protein_learning.common.helpers import default, safe_norm
 from torch import nn, Tensor

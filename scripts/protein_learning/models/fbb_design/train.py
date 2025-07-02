@@ -1,4 +1,10 @@
-"""Train Masked Design Model"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Train Masked Design Model
+"""
 from __future__ import annotations
 import os
 

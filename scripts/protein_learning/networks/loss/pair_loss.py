@@ -1,4 +1,10 @@
-"""Pair Loss Functions and Networks"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Pair Loss Functions and Networks
+"""
 from typing import Dict, Optional, Tuple, Union
 from typing import List
 

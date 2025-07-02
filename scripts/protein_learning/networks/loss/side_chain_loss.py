@@ -1,4 +1,10 @@
-"""Side Chain Loss Functions"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Side Chain Loss Functions
+"""
 import math
 
 import torch

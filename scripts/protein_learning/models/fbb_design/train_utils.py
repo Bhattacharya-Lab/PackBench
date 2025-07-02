@@ -1,4 +1,10 @@
-"""Training class for design models"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Training class for design models
+"""
 import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"

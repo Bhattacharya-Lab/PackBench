@@ -1,4 +1,10 @@
-"""Model for Fixed backbone design"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Model for Fixed backbone design
+"""
 from typing import Tuple, Dict, Any, Optional, List
 
 import numpy as np

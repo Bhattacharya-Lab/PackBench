@@ -1,4 +1,10 @@
-"""Config class for Geometric GT"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Config class for Geometric GT
+"""
 from argparse import Namespace
 from typing import Union, List, NamedTuple, Dict, Any
 

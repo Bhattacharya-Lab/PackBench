@@ -1,7 +1,10 @@
+"""Adapted from https://github.com/MattMcPartlon/AttnPacker"""
+
 from protein_learning.protein_utils.sidechains.project_sidechains import (
     compute_sc_rmsd,
     compute_clashes
 )
+
 from protein_learning.common.data.data_types.protein import Protein
 import torch
 import protein_learning.common.protein_constants as pc

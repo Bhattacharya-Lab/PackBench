@@ -1,4 +1,10 @@
-"""Tests for feature masking"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Tests for feature masking
+"""
 from protein_learning.features.feature_config import (
     InputFeatureConfig, AA_ALPHABET, FeatureName, FeatureTy, FeatureEmbeddingTy
 )

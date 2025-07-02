@@ -1,4 +1,10 @@
-"""Simplified Evoformer (no MSA)"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Simplified Evoformer (no MSA)
+"""
 from typing import Optional, Tuple
 
 import torch

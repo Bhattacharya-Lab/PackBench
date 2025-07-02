@@ -1,4 +1,9 @@
-"""Configuration for Input Feature Generation
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Configuration for Input Feature Generation
 """
 from __future__ import annotations
 

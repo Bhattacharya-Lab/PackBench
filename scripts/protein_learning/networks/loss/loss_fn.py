@@ -1,4 +1,10 @@
-"""Reconstruction Loss Functi0n"""
+"""
+Retrieved from https://github.com/MattMcPartlon/AttnPacker
+
+----
+
+Reconstruction Loss Functi0n
+"""
 import random
 from typing import Optional, List, Tuple, Union
 
